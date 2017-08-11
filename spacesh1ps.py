@@ -19,7 +19,7 @@ basedir = "/home/vgan/spacesh1ps/"
 
 # only make the animated gifs at midnight and noon
 hour_now = time.strftime("%H") 
-if hour_now == "12" or hour_now == "00":
+if hour_now == "00":
 	spaceship_image = basedir + "renders/animated/animation.gif"
         animated = True
 else:
