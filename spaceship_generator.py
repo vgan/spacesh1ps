@@ -22,6 +22,7 @@ from enum import IntEnum
 from colorsys import hls_to_rgb
 from math import radians
 
+# Set your base directory
 basedir = "/home/vgan/spacesh1ps/"
 
 DIR = os.path.dirname(os.path.abspath(__file__))
@@ -524,7 +525,7 @@ def create_materials():
     www.use_map_blend = 0
     bpy.context.scene.world.use_sky_paper = True
 
-    # sun lamp
+    # I added this sun lamp to play with lighting a little (I have no idea what I'm doing in blender TBH) - Steve
     light_data = bpy.data.lamps.new('sun', 'SUN')
     light_obj = bpy.data.objects.new('sun', light_data)
     bpy.context.scene.objects.link(light_obj)
@@ -767,8 +768,9 @@ if __name__ == "__main__":
     
     # When true, this script will generate a single spaceship in the scene.
     # When false, this script will render multiple movie frames showcasing lots of ships.
+    # Note: I actually tweaked the timing so that it just generates a short movie of single ship - Steve
     hour_now = time.strftime("%H")
-    if hour_now == "12" or hour_now == "00":
+    if hour_now == "00":
         generate_single_spaceship = False
     else:
         generate_single_spaceship = True
@@ -780,7 +782,7 @@ if __name__ == "__main__":
         #spaceshipname = GenerateSpaceShipName()
         #randomseed = spaceshipname # add anything here to generate the same spaceship
         obj = generate_spaceship()
-	# remove the Cube
+	# remove the Cube   (I kept getting the cube left in my renders so I did this to remove) - Steve
         objs = bpy.data.objects
         objs.remove(objs["Cube"], True)
 
@@ -808,14 +810,14 @@ if __name__ == "__main__":
         timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
         script_path = bpy.context.space_data.text.filepath if bpy.context.space_data else __file__
         folder = output_path if output_path else os.path.split(os.path.realpath(script_path))[0]
-        filename = basedir + "renders/spacesh1p.png" # use a more predictible name
+        filename = basedir + "renders/spacesh1p.png" # use a more predictible name for the still render
         #filename = os.path.join('renders',timestamp + '.png')
         bpy.data.scenes['Scene'].render.filepath = os.path.join(folder, filename)
         bpy.ops.render.render(write_still=True)
         
     else:
         # Export a movie showcasing many different kinds of ships
-	# --- tweaked this to do a very shirt movie of a single ship -steve
+	# --- tweaked this to do a very short movie of a single ship -steve
         # Settings
         output_path = '' # leave empty to use script folder
         total_movie_duration = 2
