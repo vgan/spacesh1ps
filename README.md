@@ -7,8 +7,8 @@ I currently have it designed to run on a schedule every 6 hours and it generates
 
 I made the *loosely* Chriss Foss inspired hull and light textures in Photoshop, the space backgrounds are all CC0 images mostly from nasa.  I also added a spaceship name generator.
 
-Operation:
-python spacesh1ps.py
+Operation:</br>
+`python spacesh1ps.py`
 
 Requirements:
 - ImageMagic to generate the animated gifs.
@@ -19,7 +19,6 @@ Requirements:
 ![Spacesh1p](renders/spacesh1p.png)
 ![Animated Spacesh1p](renders/animated/animation.gif)
  
-
 Example Accounts:
 https://twitter.com/spacesh1ps
 http://space-sh1ps.tumblr.com
