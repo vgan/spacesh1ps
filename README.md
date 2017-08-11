@@ -1,7 +1,7 @@
 # spacesh1ps
 Procedural spaceship generator in Python.
 
-This uses the awesome <a href="https://github.com/a1studmuffin/SpaceshipGenerator">SpaceshipGenerator</a> blender script by <a href="https://github.com/a1studmuffin">Michael Davies</a> to generate spaceships and post them to Twitter, Tumblr and Mastodon. 
+This uses a slightly modified version of the awesome <a href="https://github.com/a1studmuffin/SpaceshipGenerator">SpaceshipGenerator</a> blender script by <a href="https://github.com/a1studmuffin">Michael Davies</a> to generate spaceships and post them to Twitter, Tumblr and Mastodon. 
 
 I currently have it designed to run on a schedule every 6 hours and it generates an animated gif once a day at midnight, other times it just generates a single ship image.
 
