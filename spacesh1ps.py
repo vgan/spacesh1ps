@@ -14,10 +14,10 @@ api = tweepy.API(auth)
 tumblr_client = pytumblr.TumblrRestClient(tumblr_consumer_key, tumblr_consumer_secret, tumblr_token_key, tumblr_token_secret)
 mastodon_client = Mastodon(api_base_url='https://botsin.space',client_id=mastodon_client_id,client_secret=mastodon_client_secret,access_token=mastodon_access_token)
 
-# define your directory path
+# Define your directory path
 basedir = "/home/vgan/spacesh1ps/"
 
-# only make the animated gifs at midnight and noon
+# Only make the animated gifs at midnight
 hour_now = time.strftime("%H") 
 if hour_now == "00":
 	spaceship_image = basedir + "renders/animated/animation.gif"
