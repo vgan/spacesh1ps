@@ -20,6 +20,6 @@ Requirements:
 ![Animated Spacesh1p](renders/animated/animation.gif)
  
 Example Accounts:
-https://twitter.com/spacesh1ps
-http://space-sh1ps.tumblr.com
-https://botsin.space/@spacesh1ps
+- https://twitter.com/spacesh1ps
+- http://space-sh1ps.tumblr.com
+- https://botsin.space/@spacesh1ps
