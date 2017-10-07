@@ -5,7 +5,7 @@ This uses a slightly modified version of the awesome <a href="https://github.com
 
 I currently have it designed to run on a schedule every 6 hours and it generates an animated gif once a day at midnight, other times it just generates a single ship image.
 
-I made the *loosely* Chriss Foss inspired hull and light textures in Photoshop, the space backgrounds are all CC0 images mostly from nasa.  I also added a spaceship name generator.
+I made the *loosely* Chris Foss inspired hull and light textures in Photoshop, the space backgrounds are all CC0 images mostly from nasa.  I also added a spaceship name generator.
 
 Operation:</br>
 `python spacesh1ps.py`
